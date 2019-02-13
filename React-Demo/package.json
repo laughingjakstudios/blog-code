@@ -2,7 +2,6 @@
   "dependencies": {
     "auth0-lock": "^7.6.2",
     "jquery": "^3.0.0",
-    "lodash": "^3.10.0",
     "react": "^0.13.3"
   },
   "devDependencies": {

@@ -1,6 +1,5 @@
 ﻿import EventEmitter from 'events';
 import Logger from './Logger';
-import assign from 'lodash/object/assign';
 
 export default class Dispatcher {
     /**
@@ -20,7 +19,7 @@ export default class Dispatcher {
             debug: false,
             logLevel: 'ERROR'
         };
-        this.options = assign(defaultOptions, options);
+        this.options = Object.assign(defaultOptions, options);
         this.logger = new Logger('Dispatcher', { logLevel: this.options.logLevel });
 
         // Create a hash of all the stores - used for registration / deregistration
