@@ -1,7 +1,4 @@
-﻿/* eslint-disable no-console */
-import assign from 'lodash/object/assign';
-
-class Logger {
+﻿class Logger {
     /**
      * Create a new Logger object
      *
@@ -12,7 +9,7 @@ class Logger {
      */
     constructor(category, options = {}) {
         this.category = category;
-        this.logLevel = assign({
+        this.logLevel = Object.assign({
             // Default Options
             logLevel: 10
         }, options);
